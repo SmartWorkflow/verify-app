@@ -26,6 +26,12 @@ export default function UsersPage() {
   const [creditAmount, setCreditAmount] = useState('');
   const [creditNote, setCreditNote] = useState('');
   const [processing, setProcessing] = useState(false);
+  
+  // Multi-selection state
+  const [selectedUserIds, setSelectedUserIds] = useState<string[]>([]);
+  const [showBulkCreditModal, setShowBulkCreditModal] = useState(false);
+  const [bulkCreditAmount, setBulkCreditAmount] = useState('');
+  const [bulkCreditNote, setBulkCreditNote] = useState('');
 
   useEffect(() => {
     fetchUsers();
@@ -135,6 +141,69 @@ export default function UsersPage() {
     setCreditNote('');
   };
 
+  // Multi-selection functions
+  const toggleSelectAll = () => {
+    if (selectedUserIds.length === users.length) {
+      setSelectedUserIds([]);
+    } else {
+      setSelectedUserIds(users.map(user => user.id));
+    }
+  };
+
+  const toggleSelectUser = (userId: string) => {
+    setSelectedUserIds(prev => 
+      prev.includes(userId) 
+        ? prev.filter(id => id !== userId)
+        : [...prev, userId]
+    );
+  };
+
+  const handleBulkAddCredits = async () => {
+    if (selectedUserIds.length === 0 || !bulkCreditAmount) return;
+
+    const amount = parseFloat(bulkCreditAmount);
+    if (isNaN(amount)) {
+      toast.error('Invalid amount');
+      return;
+    }
+
+    setProcessing(true);
+    try {
+      const user = auth.currentUser;
+      if (!user) return;
+      
+      const token = await user.getIdToken();
+      const response = await fetch('/api/admin/users/bulk-credits', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`,
+        },
+        body: JSON.stringify({
+          userIds: selectedUserIds,
+          amount,
+          note: bulkCreditNote,
+        }),
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        toast.success(`${data.message}`);
+        setShowBulkCreditModal(false);
+        setBulkCreditAmount('');
+        setBulkCreditNote('');
+        setSelectedUserIds([]);
+        fetchUsers();
+      } else {
+        throw new Error('Failed to update TAKA');
+      }
+    } catch (error) {
+      toast.error('Failed to update TAKA for selected users');
+    } finally {
+      setProcessing(false);
+    }
+  };
+
   if (loading) {
     return (
       <div className="flex items-center justify-center h-64">
@@ -166,12 +235,46 @@ export default function UsersPage() {
         </div>
       </div>
 
+      {/* Bulk Actions Bar */}
+      {selectedUserIds.length > 0 && (
+        <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-4">
+              <span className="text-sm font-medium text-emerald-900">
+                {selectedUserIds.length} user{selectedUserIds.length > 1 ? 's' : ''} selected
+              </span>
+              <button
+                onClick={() => setSelectedUserIds([])}
+                className="text-sm text-emerald-700 hover:text-emerald-900 underline cursor-pointer"
+              >
+                Clear selection
+              </button>
+            </div>
+            <button
+              onClick={() => setShowBulkCreditModal(true)}
+              className="px-4 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors cursor-pointer flex items-center gap-2"
+            >
+              <Plus className="w-4 h-4" />
+              Add TAKA to Selected
+            </button>
+          </div>
+        </div>
+      )}
+
       {/* Users Table */}
       <div className="bg-white rounded-xl shadow-sm overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full">
             <thead className="bg-gray-50 border-b">
               <tr>
+                <th className="px-6 py-3 text-left">
+                  <input
+                    type="checkbox"
+                    checked={users.length > 0 && selectedUserIds.length === users.length}
+                    onChange={toggleSelectAll}
+                    className="w-4 h-4 text-emerald-600 border-gray-300 rounded focus:ring-emerald-500 cursor-pointer"
+                  />
+                </th>
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                   User
                 </th>
@@ -192,6 +295,14 @@ export default function UsersPage() {
             <tbody className="divide-y divide-gray-200">
               {users.map((user) => (
                 <tr key={user.id} className="hover:bg-gray-50">
+                  <td className="px-6 py-4">
+                    <input
+                      type="checkbox"
+                      checked={selectedUserIds.includes(user.id)}
+                      onChange={() => toggleSelectUser(user.id)}
+                      className="w-4 h-4 text-emerald-600 border-gray-300 rounded focus:ring-emerald-500 cursor-pointer"
+                    />
+                  </td>
                   <td className="px-6 py-4 whitespace-nowrap">
                     <div>
                       <div className="text-sm font-medium text-gray-900">
@@ -323,6 +434,79 @@ export default function UsersPage() {
                   onClick={() => {
                     setShowCreditModal(false);
                     setSelectedUser(null);
+                  }}
+                  className="flex-1 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors cursor-pointer"
+                >
+                  Cancel
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Bulk Credit Modal */}
+      {showBulkCreditModal && (
+        <div 
+          onClick={() => {
+            setShowBulkCreditModal(false);
+          }}
+          className="fixed inset-0 bg-gray-900/20 backdrop-blur-sm flex items-center justify-center z-50"
+        >
+          <div 
+            onClick={(e) => e.stopPropagation()}
+            className="bg-white rounded-xl p-6 max-w-md w-full mx-4"
+          >
+            <h2 className="text-xl font-bold text-black mb-4">
+              Add TAKA to Multiple Users
+            </h2>
+            <div className="space-y-4">
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  Selected Users: {selectedUserIds.length}
+                </label>
+                <div className="text-xs text-gray-500 max-h-24 overflow-y-auto bg-gray-50 p-2 rounded">
+                  {users
+                    .filter(u => selectedUserIds.includes(u.id))
+                    .map(u => u.email)
+                    .join(', ')}
+                </div>
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  Amount (use negative to deduct)
+                </label>
+                <input
+                  type="number"
+                  value={bulkCreditAmount}
+                  onChange={(e) => setBulkCreditAmount(e.target.value)}
+                  placeholder="e.g., 100 or -50"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 text-black placeholder-gray-400"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  Note (optional)
+                </label>
+                <textarea
+                  value={bulkCreditNote}
+                  onChange={(e) => setBulkCreditNote(e.target.value)}
+                  placeholder="Reason for TAKA adjustment..."
+                  rows={3}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 text-black placeholder-gray-400"
+                />
+              </div>
+              <div className="flex gap-3 mt-6">
+                <button
+                  onClick={handleBulkAddCredits}
+                  disabled={processing || !bulkCreditAmount}
+                  className="flex-1 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors cursor-pointer"
+                >
+                  {processing ? 'Processing...' : 'Confirm'}
+                </button>
+                <button
+                  onClick={() => {
+                    setShowBulkCreditModal(false);
                   }}
                   className="flex-1 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors cursor-pointer"
                 >
