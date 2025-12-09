@@ -1,0 +1,2087 @@
+[
+  {
+    "service": "2RedBeans",
+    "code": "2redbeans",
+    "price": "৳200.00"
+  },
+  {
+    "service": "3Fun",
+    "code": "auw",
+    "price": "৳80.00"
+  },
+  {
+    "service": "7-Eleven",
+    "code": "7eleven",
+    "price": "৳40.00"
+  },
+  {
+    "service": "AAA",
+    "code": "aaa",
+    "price": "৳200.00"
+  },
+  {
+    "service": "AARP Rewards",
+    "code": "aarp",
+    "price": "৳60.00"
+  },
+  {
+    "service": "Acima",
+    "code": "acima",
+    "price": "৳200.00"
+  },
+  {
+    "service": "Acorns",
+    "code": "acorns",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Advance America",
+    "code": "advanceamerica",
+    "price": "৳100.00"
+  },
+  {
+    "service": "AEG Presents",
+    "code": "aegpresents",
+    "price": "৳40.00"
+  },
+  {
+    "service": "af247.com",
+    "code": "af247",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Affirm",
+    "code": "affirm",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Afterpay",
+    "code": "afterpay",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Airbaton.net",
+    "code": "airbaton",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Airbnb",
+    "code": "airbnb",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Albert.com",
+    "code": "albert",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Albertsons / Safeway",
+    "code": "albertsons",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Alibaba Cloud",
+    "code": "alibabacloud",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Alipay",
+    "code": "alipay",
+    "price": "৳200.00"
+  },
+  {
+    "service": "Ally",
+    "code": "ally",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Amazon / AWS",
+    "code": "am",
+    "price": "৳200.00"
+  },
+  {
+    "service": "Amex",
+    "code": "amex",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Anthropologie",
+    "code": "anthropologie",
+    "price": "৳40.00"
+  },
+  {
+    "service": "AOL",
+    "code": "pm",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Apple",
+    "code": "wx",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Archer app",
+    "code": "archer",
+    "price": "৳120.00"
+  },
+  {
+    "service": "Ashley Madison",
+    "code": "ashleymadison",
+    "price": "৳160.00"
+  },
+  {
+    "service": "Aspiration / GreenFi",
+    "code": "aspiration",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Astrafi.com",
+    "code": "astrafi",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Attapoll",
+    "code": "anl",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Axos Bank",
+    "code": "axos",
+    "price": "৳320.00"
+  },
+  {
+    "service": "AXS",
+    "code": "axs",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Badoo",
+    "code": "qv",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Bank of America",
+    "code": "boa",
+    "price": "৳320.00"
+  },
+  {
+    "service": "BankMobile",
+    "code": "bankmobile",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Baselane",
+    "code": "baselane",
+    "price": "৳80.00"
+  },
+  {
+    "service": "BCBS",
+    "code": "bcbs",
+    "price": "৳20.00"
+  },
+  {
+    "service": "Beehiiv",
+    "code": "beehiiv",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Benjamin",
+    "code": "bdx",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Best Buy",
+    "code": "bestbuy",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Bet Fanatics",
+    "code": "betfanatics",
+    "price": "৳280.00"
+  },
+  {
+    "service": "Bet365",
+    "code": "ie",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Betr",
+    "code": "betr",
+    "price": "৳160.00"
+  },
+  {
+    "service": "Bilt Rewards",
+    "code": "biltrewards",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Binance.US",
+    "code": "binanceus",
+    "price": "৳160.00"
+  },
+  {
+    "service": "Blastbucks",
+    "code": "blastbucks",
+    "price": "৳160.00"
+  },
+  {
+    "service": "Blizzard / Battle.net",
+    "code": "bz",
+    "price": "৳80.00"
+  },
+  {
+    "service": "BLK",
+    "code": "blk",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Bluesky",
+    "code": "bluesky",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Bluevine",
+    "code": "bluevine",
+    "price": "৳40.00"
+  },
+  {
+    "service": "BMO Alto",
+    "code": "bmoalto",
+    "price": "৳320.00"
+  },
+  {
+    "service": "BMO Harris",
+    "code": "bmoharris",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Boss Money",
+    "code": "bossmoney",
+    "price": "৳140.00"
+  },
+  {
+    "service": "Boss Revolution",
+    "code": "bossrevolution",
+    "price": "৳120.00"
+  },
+  {
+    "service": "Branded Surveys",
+    "code": "brandedsurveys",
+    "price": "৳40.00"
+  },
+  {
+    "service": "BridgeMoney.co",
+    "code": "bridgemoney",
+    "price": "৳200.00"
+  },
+  {
+    "service": "Bright Capital",
+    "code": "bright",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Bumble",
+    "code": "mo",
+    "price": "৳72.00"
+  },
+  {
+    "service": "Burner",
+    "code": "burner",
+    "price": "৳40.00"
+  },
+  {
+    "service": "ButcherBox",
+    "code": "butcherbox",
+    "price": "৳60.00"
+  },
+  {
+    "service": "Caesars",
+    "code": "caesars",
+    "price": "৳280.00"
+  },
+  {
+    "service": "Capital One",
+    "code": "apr",
+    "price": "৳160.00"
+  },
+  {
+    "service": "Cash App",
+    "code": "it",
+    "price": "৳1000.00"
+  },
+  {
+    "service": "CashLoans Express",
+    "code": "cashloansexpress",
+    "price": "৳320.00"
+  },
+  {
+    "service": "CenturyLink",
+    "code": "centurylink",
+    "price": "৳80.00"
+  },
+  {
+    "service": "ChargePoint",
+    "code": "chargepoint",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Chase",
+    "code": "chase",
+    "price": "৳120.00"
+  },
+  {
+    "service": "Chevron / TexaCo",
+    "code": "afk",
+    "price": "৳100.00"
+  },
+  {
+    "service": "Chick-fil-A",
+    "code": "chickfila",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Chime",
+    "code": "chime",
+    "price": "৳720.00"
+  },
+  {
+    "service": "Chipotle",
+    "code": "chipotle",
+    "price": "৳20.00"
+  },
+  {
+    "service": "Chispa",
+    "code": "ir",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Chumba Casino",
+    "code": "chumbacasino",
+    "price": "৳160.00"
+  },
+  {
+    "service": "Circle K",
+    "code": "circlek",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Citi",
+    "code": "citi",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Citizens",
+    "code": "citizens",
+    "price": "৳320.00"
+  },
+  {
+    "service": "ClassPass",
+    "code": "classpass",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Claude AI",
+    "code": "acz",
+    "price": "৳120.00"
+  },
+  {
+    "service": "Cleo",
+    "code": "cleo",
+    "price": "৳100.00"
+  },
+  {
+    "service": "Coca-Cola",
+    "code": "abb",
+    "price": "৳20.00"
+  },
+  {
+    "service": "CoD",
+    "code": "cod",
+    "price": "৳20.00"
+  },
+  {
+    "service": "Codashop",
+    "code": "codashop",
+    "price": "৳120.00"
+  },
+  {
+    "service": "Coffee Meets Bagel",
+    "code": "cmb",
+    "price": "৳72.00"
+  },
+  {
+    "service": "Coinbase",
+    "code": "re",
+    "price": "৳100.00"
+  },
+  {
+    "service": "College Pulse",
+    "code": "cpulse",
+    "price": "৳160.00"
+  },
+  {
+    "service": "Courtyard.io",
+    "code": "courtyard",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Craigslist",
+    "code": "wc",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Credit Karma",
+    "code": "karma",
+    "price": "৳200.00"
+  },
+  {
+    "service": "CrowdTap",
+    "code": "sx",
+    "price": "৳56.00"
+  },
+  {
+    "service": "Crypto.com",
+    "code": "cryptocom",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Current.com",
+    "code": "current",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Currently.com / AT&T Email",
+    "code": "currently",
+    "price": "৳40.00"
+  },
+  {
+    "service": "CVS",
+    "code": "cvs",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Dave.com",
+    "code": "dave",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Deliveroo",
+    "code": "zk",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Dialpad",
+    "code": "dialpad",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Dil Mil",
+    "code": "dilmil",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Ding.com",
+    "code": "dingcom",
+    "price": "৳40.00"
+  },
+  {
+    "service": "DingDingDing",
+    "code": "dingdingding",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Dingtone",
+    "code": "dingtone",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Discord",
+    "code": "ds",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Discover Bank",
+    "code": "discover",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Docusign",
+    "code": "docusign",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Dollar General",
+    "code": "dollargeneral",
+    "price": "৳40.00"
+  },
+  {
+    "service": "DoorDash",
+    "code": "ac",
+    "price": "৳40.00"
+  },
+  {
+    "service": "DoubleList",
+    "code": "doublelist",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Dovetail",
+    "code": "dovetail",
+    "price": "৳100.00"
+  },
+  {
+    "service": "DraftKings",
+    "code": "draftkings",
+    "price": "৳280.00"
+  },
+  {
+    "service": "DripShop",
+    "code": "dripshop",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Dunkin Donuts",
+    "code": "dunkin",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Dutch Bros",
+    "code": "dutchbros",
+    "price": "৳40.00"
+  },
+  {
+    "service": "E*TRADE",
+    "code": "etrade",
+    "price": "৳200.00"
+  },
+  {
+    "service": "East West Bank",
+    "code": "eastwestbank",
+    "price": "৳320.00"
+  },
+  {
+    "service": "eBay",
+    "code": "dh",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Eneba",
+    "code": "uf",
+    "price": "৳80.00"
+  },
+  {
+    "service": "EpicPull",
+    "code": "epicpull",
+    "price": "৳40.00"
+  },
+  {
+    "service": "ESPN BET",
+    "code": "espnbet",
+    "price": "৳200.00"
+  },
+  {
+    "service": "eToro",
+    "code": "etoro",
+    "price": "৳120.00"
+  },
+  {
+    "service": "Etsy",
+    "code": "alq",
+    "price": "৳80.00"
+  },
+  {
+    "service": "EverBank",
+    "code": "everbank",
+    "price": "৳320.00"
+  },
+  {
+    "service": "EVgo",
+    "code": "evgo",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Experian",
+    "code": "experian",
+    "price": "৳400.00"
+  },
+  {
+    "service": "Facebook",
+    "code": "fb",
+    "price": "৳600.00"
+  },
+  {
+    "service": "Fanatics Live",
+    "code": "fanaticslive",
+    "price": "৳40.00"
+  },
+  {
+    "service": "fanduel",
+    "code": "fanduel",
+    "price": "৳200.00"
+  },
+  {
+    "service": "Feastables",
+    "code": "feastables",
+    "price": "৳40.00"
+  },
+  {
+    "service": "FedEx",
+    "code": "fedex",
+    "price": "৳60.00"
+  },
+  {
+    "service": "Feeld",
+    "code": "ws",
+    "price": "৳44.00"
+  },
+  {
+    "service": "Feels App",
+    "code": "feels",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Fetch Rewards",
+    "code": "fetchrewards",
+    "price": "৳40.00"
+  },
+  {
+    "service": "FetLife",
+    "code": "fet",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Fidelity",
+    "code": "fidelity",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Fidelity NetBenefits",
+    "code": "netbenefits",
+    "price": "৳400.00"
+  },
+  {
+    "service": "Fifth Third Bank",
+    "code": "fifththirdbank",
+    "price": "৳320.00"
+  },
+  {
+    "service": "FinnFox / EiLoan",
+    "code": "finnfox",
+    "price": "৳300.00"
+  },
+  {
+    "service": "First National Bank",
+    "code": "firstnationalbank",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Five Surveys",
+    "code": "fivesurveys",
+    "price": "৳60.00"
+  },
+  {
+    "service": "Fiverr",
+    "code": "cn",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Flip",
+    "code": "flip",
+    "price": "৳400.00"
+  },
+  {
+    "service": "Fooji",
+    "code": "fooji",
+    "price": "৳20.00"
+  },
+  {
+    "service": "Foot Locker",
+    "code": "footlocker",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Found.com",
+    "code": "foundcom",
+    "price": "৳120.00"
+  },
+  {
+    "service": "Frisbee Rewards",
+    "code": "frisbee",
+    "price": "৳100.00"
+  },
+  {
+    "service": "Frost Bank",
+    "code": "frostbank",
+    "price": "৳400.00"
+  },
+  {
+    "service": "Future.green",
+    "code": "futuregreen",
+    "price": "৳200.00"
+  },
+  {
+    "service": "Gaintplay",
+    "code": "gaint",
+    "price": "৳60.00"
+  },
+  {
+    "service": "GALA",
+    "code": "gala",
+    "price": "৳24.00"
+  },
+  {
+    "service": "Gameflip",
+    "code": "gameflip",
+    "price": "৳40.00"
+  },
+  {
+    "service": "GBank",
+    "code": "gbank",
+    "price": "৳320.00"
+  },
+  {
+    "service": "GCX",
+    "code": "gcx",
+    "price": "৳200.00"
+  },
+  {
+    "service": "Gemini",
+    "code": "gemini",
+    "price": "৳80.00"
+  },
+  {
+    "service": "GetHoldings",
+    "code": "getholdings",
+    "price": "৳400.00"
+  },
+  {
+    "service": "GMX.com",
+    "code": "abk",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Go2Bank",
+    "code": "go2bank",
+    "price": "৳200.00"
+  },
+  {
+    "service": "GoDaddy",
+    "code": "godaddy",
+    "price": "৳120.00"
+  },
+  {
+    "service": "GoFundMe",
+    "code": "gofundme",
+    "price": "৳200.00"
+  },
+  {
+    "service": "Golden1",
+    "code": "golden1",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Google / Gmail / Youtube",
+    "code": "go",
+    "price": "৳460.00"
+  },
+  {
+    "service": "Google Chat",
+    "code": "googlechat",
+    "price": "৳140.00"
+  },
+  {
+    "service": "Google Voice",
+    "code": "gf",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Gopuff",
+    "code": "ajn",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Green Dot",
+    "code": "greendot",
+    "price": "৳200.00"
+  },
+  {
+    "service": "Greenlight.com",
+    "code": "greenlight",
+    "price": "৳200.00"
+  },
+  {
+    "service": "Grifin.com",
+    "code": "grifin",
+    "price": "৳48.00"
+  },
+  {
+    "service": "Grindr",
+    "code": "yw",
+    "price": "৳40.00"
+  },
+  {
+    "service": "happn",
+    "code": "happn",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Hard Rock Bet",
+    "code": "hardrockbet",
+    "price": "৳200.00"
+  },
+  {
+    "service": "HealthSafe (Optum)",
+    "code": "healthsafe",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Hey Cash",
+    "code": "heycash",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Hily",
+    "code": "rt",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Hinge",
+    "code": "vz",
+    "price": "৳120.00"
+  },
+  {
+    "service": "Hitch",
+    "code": "hitch",
+    "price": "৳40.00"
+  },
+  {
+    "service": "HKING",
+    "code": "hking",
+    "price": "৳24.00"
+  },
+  {
+    "service": "Hopper",
+    "code": "hopper",
+    "price": "৳60.00"
+  },
+  {
+    "service": "Hostinger",
+    "code": "hostinger",
+    "price": "৳40.00"
+  },
+  {
+    "service": "HotStreak",
+    "code": "hotstreak",
+    "price": "৳80.00"
+  },
+  {
+    "service": "HUD",
+    "code": "hud",
+    "price": "৳60.00"
+  },
+  {
+    "service": "Huntington",
+    "code": "huntington",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Ibotta",
+    "code": "ibotta",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Imprint",
+    "code": "imprint",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Indeed",
+    "code": "indeed",
+    "price": "৳40.00"
+  },
+  {
+    "service": "inKind",
+    "code": "inkind",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Innago",
+    "code": "innago",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Instacart",
+    "code": "instacart",
+    "price": "৳60.00"
+  },
+  {
+    "service": "Instagram",
+    "code": "ig",
+    "price": "৳120.00"
+  },
+  {
+    "service": "Intuit",
+    "code": "intuit",
+    "price": "৳120.00"
+  },
+  {
+    "service": "Ipsos iSay",
+    "code": "agk",
+    "price": "৳80.00"
+  },
+  {
+    "service": "JD.com",
+    "code": "za",
+    "price": "৳32.00"
+  },
+  {
+    "service": "Jointrue.com",
+    "code": "jointrue",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Juno",
+    "code": "juno",
+    "price": "৳80.00"
+  },
+  {
+    "service": "KakaoTalk",
+    "code": "kt",
+    "price": "৳20.00"
+  },
+  {
+    "service": "Kalshi",
+    "code": "kalshi",
+    "price": "৳160.00"
+  },
+  {
+    "service": "Keitaro",
+    "code": "keitaro",
+    "price": "৳200.00"
+  },
+  {
+    "service": "Keybank",
+    "code": "keybank",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Kikoff",
+    "code": "kikoff",
+    "price": "৳80.00"
+  },
+  {
+    "service": "KKTIX",
+    "code": "kktix",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Klarna",
+    "code": "klarna",
+    "price": "৳400.00"
+  },
+  {
+    "service": "Klover",
+    "code": "klover",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Klutch",
+    "code": "klutchcard",
+    "price": "৳160.00"
+  },
+  {
+    "service": "Koho.ca",
+    "code": "koho",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Kraken",
+    "code": "kraken",
+    "price": "৳400.00"
+  },
+  {
+    "service": "Kudos",
+    "code": "kudos",
+    "price": "৳48.00"
+  },
+  {
+    "service": "LAA",
+    "code": "laa",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Layup",
+    "code": "layup",
+    "price": "৳40.00"
+  },
+  {
+    "service": "League of Legends",
+    "code": "riot",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Lego Offer Hub",
+    "code": "lego",
+    "price": "৳200.00"
+  },
+  {
+    "service": "Lightning AI",
+    "code": "lightningai",
+    "price": "৳80.00"
+  },
+  {
+    "service": "LightStream.com",
+    "code": "lightstream",
+    "price": "৳320.00"
+  },
+  {
+    "service": "LINE messenger",
+    "code": "me",
+    "price": "৳20.00"
+  },
+  {
+    "service": "LinkedIn",
+    "code": "tn",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Linode",
+    "code": "ex",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Lowe's",
+    "code": "lowes",
+    "price": "৳100.00"
+  },
+  {
+    "service": "Luvs",
+    "code": "luvs",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Lyft",
+    "code": "tu",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Lysted",
+    "code": "lysted",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Manus.im",
+    "code": "manus",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Marylous Coffee",
+    "code": "marylous",
+    "price": "৳60.00"
+  },
+  {
+    "service": "Match.com",
+    "code": "abf",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Mercari",
+    "code": "dg",
+    "price": "৳100.00"
+  },
+  {
+    "service": "Merrill Edge",
+    "code": "merrilledge",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Microsoft / Outlook / Hotmail",
+    "code": "mm",
+    "price": "৳60.00"
+  },
+  {
+    "service": "MoneyLion",
+    "code": "qo",
+    "price": "৳80.00"
+  },
+  {
+    "service": "MoonPay",
+    "code": "bgj",
+    "price": "৳120.00"
+  },
+  {
+    "service": "MyGiftCardRedemption",
+    "code": "mygiftcardredemption",
+    "price": "৳160.00"
+  },
+  {
+    "service": "Naver",
+    "code": "naver",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Navy Federal",
+    "code": "navy",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Neocrypto",
+    "code": "aft",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Net Pay Advance",
+    "code": "netpayadvance",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Netflix",
+    "code": "netflix",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Netspend",
+    "code": "netspend",
+    "price": "৳400.00"
+  },
+  {
+    "service": "Nexon",
+    "code": "nexon",
+    "price": "৳20.00"
+  },
+  {
+    "service": "Nextdoor",
+    "code": "nextdoor",
+    "price": "৳40.00"
+  },
+  {
+    "service": "NFCU",
+    "code": "nfcu",
+    "price": "৳400.00"
+  },
+  {
+    "service": "Nice Surveys",
+    "code": "nicesurveys",
+    "price": "৳60.00"
+  },
+  {
+    "service": "Nike",
+    "code": "ew",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Noonlight",
+    "code": "noonlight",
+    "price": "৳60.00"
+  },
+  {
+    "service": "North One",
+    "code": "northone",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Novo",
+    "code": "novo",
+    "price": "৳80.00"
+  },
+  {
+    "service": "NYC",
+    "code": "nyc",
+    "price": "৳80.00"
+  },
+  {
+    "service": "OfferUp",
+    "code": "zm",
+    "price": "৳40.00"
+  },
+  {
+    "service": "OkCupid",
+    "code": "vm",
+    "price": "৳40.00"
+  },
+  {
+    "service": "One.app / Onepay",
+    "code": "oneapp",
+    "price": "৳280.00"
+  },
+  {
+    "service": "OneForma",
+    "code": "oneforma",
+    "price": "৳40.00"
+  },
+  {
+    "service": "OneMain Financial",
+    "code": "onemain",
+    "price": "৳320.00"
+  },
+  {
+    "service": "OnlineCheckWriter",
+    "code": "onlinecheckwriter",
+    "price": "৳40.00"
+  },
+  {
+    "service": "OpenAI / ChatGPT",
+    "code": "dr",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Openbank",
+    "code": "openbank",
+    "price": "৳160.00"
+  },
+  {
+    "service": "OpenPhone",
+    "code": "openphone",
+    "price": "৳40.00"
+  },
+  {
+    "service": "OpenTable",
+    "code": "opentable",
+    "price": "৳200.00"
+  },
+  {
+    "service": "OurTime",
+    "code": "ourtime",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Outlier AI",
+    "code": "outlier",
+    "price": "৳40.00"
+  },
+  {
+    "service": "OZK",
+    "code": "ozk",
+    "price": "৳400.00"
+  },
+  {
+    "service": "PatientFi",
+    "code": "patientfi",
+    "price": "৳200.00"
+  },
+  {
+    "service": "Payoneer",
+    "code": "payoneer",
+    "price": "৳200.00"
+  },
+  {
+    "service": "PayPal",
+    "code": "ts",
+    "price": "৳440.00"
+  },
+  {
+    "service": "Pelago",
+    "code": "pelago",
+    "price": "৳200.00"
+  },
+  {
+    "service": "PenFed",
+    "code": "penfed",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Perpay",
+    "code": "perpay",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Phoner",
+    "code": "phoner",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Phound",
+    "code": "fp",
+    "price": "৳160.00"
+  },
+  {
+    "service": "Pinata.ai",
+    "code": "pinata",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Pinger",
+    "code": "pinger",
+    "price": "৳80.00"
+  },
+  {
+    "service": "PingMe",
+    "code": "pingme",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Pixels.xyz",
+    "code": "pixels",
+    "price": "৳36.00"
+  },
+  {
+    "service": "Plaid",
+    "code": "plaid",
+    "price": "৳400.00"
+  },
+  {
+    "service": "Playful Rewards",
+    "code": "playful",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Plenty of Fish",
+    "code": "pf",
+    "price": "৳40.00"
+  },
+  {
+    "service": "PNC",
+    "code": "pnc",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Pogo",
+    "code": "pogo",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Poshmark",
+    "code": "oz",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Prime Opinion",
+    "code": "primeopinion",
+    "price": "৳48.00"
+  },
+  {
+    "service": "Prolific",
+    "code": "prolific",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Public.com",
+    "code": "public",
+    "price": "৳120.00"
+  },
+  {
+    "service": "Pure Minutes",
+    "code": "pureminutes",
+    "price": "৳80.00"
+  },
+  {
+    "service": "PVC",
+    "code": "pvc",
+    "price": "৳120.00"
+  },
+  {
+    "service": "Qantas",
+    "code": "qantas",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Raisin",
+    "code": "raisin",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Rate4Rewards",
+    "code": "r4r",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Raya The App",
+    "code": "raya",
+    "price": "৳60.00"
+  },
+  {
+    "service": "Rebtel",
+    "code": "ajj",
+    "price": "৳20.00"
+  },
+  {
+    "service": "Rebtel",
+    "code": "rebtel",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Reddit",
+    "code": "reddit",
+    "price": "৳160.00"
+  },
+  {
+    "service": "RedNote / Xiaohongshu",
+    "code": "rednote",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Regions",
+    "code": "regions",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Relayfi.com",
+    "code": "relayfi",
+    "price": "৳200.00"
+  },
+  {
+    "service": "Resy.com",
+    "code": "resy",
+    "price": "৳200.00"
+  },
+  {
+    "service": "Revel",
+    "code": "revel",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Revolut",
+    "code": "revolut",
+    "price": "৳160.00"
+  },
+  {
+    "service": "RevTrax",
+    "code": "revtrax",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Ria Money Transfer",
+    "code": "riamoneytransfer",
+    "price": "৳120.00"
+  },
+  {
+    "service": "Ring4",
+    "code": "ring4",
+    "price": "৳60.00"
+  },
+  {
+    "service": "River",
+    "code": "river",
+    "price": "৳200.00"
+  },
+  {
+    "service": "Robinhood",
+    "code": "robinhood",
+    "price": "৳160.00"
+  },
+  {
+    "service": "Roblox",
+    "code": "roblox",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Rocketreach",
+    "code": "rocketreach",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Roomies",
+    "code": "roomies",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Rove Miles",
+    "code": "rovemiles",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Rumble",
+    "code": "rumble",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Sam's Club",
+    "code": "samsclub",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Santander",
+    "code": "lj",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Schwab",
+    "code": "schwab",
+    "price": "৳320.00"
+  },
+  {
+    "service": "ScreenConnect",
+    "code": "screenconnect",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Seated",
+    "code": "are",
+    "price": "৳40.00"
+  },
+  {
+    "service": "SeatGeek",
+    "code": "seatgeek",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Service not listed",
+    "code": "unlisted",
+    "price": "৳400.00"
+  },
+  {
+    "service": "Sezzle",
+    "code": "sezzle",
+    "price": "৳320.00"
+  },
+  {
+    "service": "SHEIN",
+    "code": "aez",
+    "price": "৳80.00"
+  },
+  {
+    "service": "ShiftKey",
+    "code": "shiftkey",
+    "price": "৳200.00"
+  },
+  {
+    "service": "ShippingEasy",
+    "code": "shippingeasy",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Shop.app",
+    "code": "shop",
+    "price": "৳120.00"
+  },
+  {
+    "service": "ShopBack",
+    "code": "shopback",
+    "price": "৳60.00"
+  },
+  {
+    "service": "Sideline / Index by Pinger",
+    "code": "sideline",
+    "price": "৳60.00"
+  },
+  {
+    "service": "Signal",
+    "code": "bw",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Skout",
+    "code": "skout",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Skrill",
+    "code": "aqt",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Sling Money",
+    "code": "slingmoney",
+    "price": "৳160.00"
+  },
+  {
+    "service": "Snakzy",
+    "code": "snakzy",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Snap Finance",
+    "code": "snapfinance",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Snapchat",
+    "code": "fu",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Snaplii",
+    "code": "snaplii",
+    "price": "৳160.00"
+  },
+  {
+    "service": "Snipp",
+    "code": "snipp",
+    "price": "৳40.00"
+  },
+  {
+    "service": "SoFi Bank",
+    "code": "sofi",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Sonetel",
+    "code": "sonetel",
+    "price": "৳80.00"
+  },
+  {
+    "service": "SoulAPP",
+    "code": "soulapp",
+    "price": "৳80.00"
+  },
+  {
+    "service": "SplitDrop",
+    "code": "splitdrop",
+    "price": "৳60.00"
+  },
+  {
+    "service": "Sprucemoney.com",
+    "code": "spruce",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Square",
+    "code": "bbg",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Stash.com",
+    "code": "stash",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Steam",
+    "code": "mt",
+    "price": "৳200.00"
+  },
+  {
+    "service": "Step",
+    "code": "step",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Stir",
+    "code": "stir",
+    "price": "৳40.00"
+  },
+  {
+    "service": "StoreCash",
+    "code": "storecash",
+    "price": "৳160.00"
+  },
+  {
+    "service": "Strike",
+    "code": "strike",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Stripe",
+    "code": "stripe",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Sunbit",
+    "code": "sunbit",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Super.com",
+    "code": "super",
+    "price": "৳60.00"
+  },
+  {
+    "service": "Swagbucks / InboxDollars / MyPoints / ySense / Noones / Adgate Survey",
+    "code": "swag",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Swittch",
+    "code": "swittch",
+    "price": "৳48.00"
+  },
+  {
+    "service": "Taimi",
+    "code": "taimi",
+    "price": "৳120.00"
+  },
+  {
+    "service": "Taobao / Alibaba",
+    "code": "taobao",
+    "price": "৳40.00"
+  },
+  {
+    "service": "TCGplayer",
+    "code": "tcgplayer",
+    "price": "৳80.00"
+  },
+  {
+    "service": "TD.com",
+    "code": "tdcom",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Telegram",
+    "code": "tg",
+    "price": "৳400.00"
+  },
+  {
+    "service": "Temu",
+    "code": "ep",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Tencent QQ",
+    "code": "tencent",
+    "price": "৳40.00"
+  },
+  {
+    "service": "TextFree",
+    "code": "asf",
+    "price": "৳32.00"
+  },
+  {
+    "service": "Textla",
+    "code": "textla",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Textr",
+    "code": "textr",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Threads",
+    "code": "threads",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Ticketmaster",
+    "code": "gp",
+    "price": "৳40.00"
+  },
+  {
+    "service": "TicketSwap",
+    "code": "ticketswap",
+    "price": "৳80.00"
+  },
+  {
+    "service": "TikTok",
+    "code": "lf",
+    "price": "৳140.00"
+  },
+  {
+    "service": "Timewall",
+    "code": "timewall",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Tinder",
+    "code": "oi",
+    "price": "৳120.00"
+  },
+  {
+    "service": "Top Surveys / Earnstar",
+    "code": "topsurveys",
+    "price": "৳60.00"
+  },
+  {
+    "service": "Tradify",
+    "code": "tradify",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Trading.com",
+    "code": "tradingcom",
+    "price": "৳200.00"
+  },
+  {
+    "service": "TransUnion",
+    "code": "transunion",
+    "price": "৳320.00"
+  },
+  {
+    "service": "TrapCall",
+    "code": "trapcall",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Truist",
+    "code": "truist",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Truth Social",
+    "code": "ada",
+    "price": "৳32.00"
+  },
+  {
+    "service": "TurboTenant",
+    "code": "turbotenant",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Twilio",
+    "code": "twilio",
+    "price": "৳200.00"
+  },
+  {
+    "service": "Twitch",
+    "code": "hb",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Twitter",
+    "code": "tw",
+    "price": "৳48.00"
+  },
+  {
+    "service": "U.S. Bank",
+    "code": "usbank",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Uber",
+    "code": "ub",
+    "price": "৳40.00"
+  },
+  {
+    "service": "UFBdirect.com",
+    "code": "ufb",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Unbank",
+    "code": "unbank",
+    "price": "৳160.00"
+  },
+  {
+    "service": "United Airlines",
+    "code": "unitedairlines",
+    "price": "৳240.00"
+  },
+  {
+    "service": "UPAYNET",
+    "code": "upaynet",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Uphold",
+    "code": "uphold",
+    "price": "৳200.00"
+  },
+  {
+    "service": "Uprova",
+    "code": "uprova",
+    "price": "৳400.00"
+  },
+  {
+    "service": "Upward",
+    "code": "upward",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Upwork",
+    "code": "upwork",
+    "price": "৳40.00"
+  },
+  {
+    "service": "USAA",
+    "code": "usaa",
+    "price": "৳320.00"
+  },
+  {
+    "service": "USALLIANCE",
+    "code": "usalliance",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Varo",
+    "code": "varo",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Venmo",
+    "code": "yy",
+    "price": "৳200.00"
+  },
+  {
+    "service": "Veoride",
+    "code": "veo",
+    "price": "৳100.00"
+  },
+  {
+    "service": "Verasight",
+    "code": "verasight",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Vercel",
+    "code": "vercel",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Veriswap",
+    "code": "veriswap",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Viber",
+    "code": "vi",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Vinted",
+    "code": "vinted",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Vision Engage",
+    "code": "vision_engage",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Vitacost",
+    "code": "vitacost",
+    "price": "৳80.00"
+  },
+  {
+    "service": "VKontakte",
+    "code": "vk",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Vumber",
+    "code": "vumber",
+    "price": "৳80.00"
+  },
+  {
+    "service": "WalletHub",
+    "code": "wallethub",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Walmart",
+    "code": "wr",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Walmart MoneyCard",
+    "code": "walmartmoneycard",
+    "price": "৳100.00"
+  },
+  {
+    "service": "Wayfair",
+    "code": "wayfair",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Waymo",
+    "code": "waymo",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Wealthfront",
+    "code": "wealthfront",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Webull",
+    "code": "alf",
+    "price": "৳80.00"
+  },
+  {
+    "service": "WeChat",
+    "code": "wb",
+    "price": "৳100.00"
+  },
+  {
+    "service": "Weebly",
+    "code": "weebly",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Wells Fargo",
+    "code": "wfargo",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Wert",
+    "code": "wert",
+    "price": "৳60.00"
+  },
+  {
+    "service": "Western Union",
+    "code": "wu",
+    "price": "৳200.00"
+  },
+  {
+    "service": "WeTalk",
+    "code": "wetalk",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Whatnot",
+    "code": "whatnot",
+    "price": "৳40.00"
+  },
+  {
+    "service": "WhatsApp",
+    "code": "wa",
+    "price": "৳960.00"
+  },
+  {
+    "service": "Wheely",
+    "code": "wheely",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Wingstop",
+    "code": "wingstop",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Wise",
+    "code": "bo",
+    "price": "৳320.00"
+  },
+  {
+    "service": "Wolt",
+    "code": "rr",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Wonder.com",
+    "code": "wonder",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Yahoo",
+    "code": "mb",
+    "price": "৳60.00"
+  },
+  {
+    "service": "Yay.com",
+    "code": "yay",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Yendo",
+    "code": "yendo",
+    "price": "৳400.00"
+  },
+  {
+    "service": "Zalo",
+    "code": "mj",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Zestearn.com",
+    "code": "zestearn",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Zillow",
+    "code": "zillow",
+    "price": "৳80.00"
+  },
+  {
+    "service": "Zip.co",
+    "code": "zipco",
+    "price": "৳200.00"
+  },
+  {
+    "service": "Zoho",
+    "code": "zoho",
+    "price": "৳40.00"
+  },
+  {
+    "service": "Zyrtec",
+    "code": "zyrtec",
+    "price": "৳40.00"
+  }
+]

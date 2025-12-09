@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-open-sans);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-open-sans), system-ui, -apple-system, sans-serif;
+}
+
+/* Phone input custom styles */
+.react-international-phone-input-container {
+  width: 100%;
+}
+
+.phone-input-field {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  color: #000;
+}
+
+.phone-input-field::placeholder {
+  color: #9ca3af;
+}
+
+.phone-input-field:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #1dd1a1;
+}
+
+.phone-country-button {
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem 0 0 0.5rem;
+  padding: 0.5rem 1rem !important;
+  min-width: 80px;
+}
+
+.phone-country-button:hover {
+  background-color: #f9fafb;
+}
+
+.react-international-phone-flag-emoji {
+  font-size: 1.25rem;
+  margin-right: 0.5rem;
+}
+
+/* Prefetch flag images */
+.react-international-phone-country-selector-dropdown {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.react-international-phone-country-selector-dropdown img {
+  will-change: transform;
+  content-visibility: auto;
+}
+
+/* Modern custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* no visible track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(30, 64, 175, 0.15);
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+/* Firefox scrollbar styling */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(30,64,175,0.15) transparent;
+}
