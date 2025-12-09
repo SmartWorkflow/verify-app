@@ -75,24 +75,6 @@ npm run dev
 
 5. Open [http://localhost:3000](http://localhost:3000)
 
-## Project Structure
-
-```
-app/
-├── (auth)/              # Auth pages (login, signup, admin-login)
-├── (dashboard)/         # User dashboard
-├── admin/               # Admin panel (users, transactions, stats)
-├── api/
-│   ├── admin/          # Admin API routes
-│   ├── credits/        # Credit balance API
-│   ├── numbers/        # DaisySMS number management
-│   └── sms/            # SMS retrieval
-components/              # Reusable components
-contexts/                # Auth and WebSocket contexts
-lib/                     # Firebase, Socket.io, utilities
-types/                   # TypeScript definitions
-```
-
 ## Admin Access
 
 1. Set user role to "admin" in Firestore
@@ -107,8 +89,11 @@ types/                   # TypeScript definitions
 
 - Next.js 15 with App Router
 - TypeScript
-- Firebase (Auth + Firestore)
-- Socket.io (WebSocket)
-- Tailwind CSS 4
-- Open Sans font
-- DaisySMS API
+- Firebase Authentication & Firestore
+- Socket.io for WebSocket
+- Tailwind CSS
+- React Hot Toast
+- SWR for data fetching
+- Lucide React for icons
+- Open Sans font (Google Fonts)
+- DaisySMS API integration
