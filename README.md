@@ -87,7 +87,7 @@ npm run dev
 
 ## Tech Stack
 
-- Next.js 15 with App Router
+- Next.js 16 with App Router
 - TypeScript
 - Firebase Authentication & Firestore
 - Socket.io for WebSocket
