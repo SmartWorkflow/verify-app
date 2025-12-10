@@ -28,6 +28,9 @@ export async function GET(request: NextRequest) {
       ...doc.data()
     }));
 
+    console.log('📞 [Activations API] Found', activations.length, 'activations for user:', userId);
+    activations.forEach(a => console.log('   - activationId:', a.activationId, 'phone:', a.phoneNumber));
+
     return NextResponse.json(activations);
   } catch (error: any) {
     console.error('Error fetching activations:', error);

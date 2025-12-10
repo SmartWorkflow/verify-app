@@ -111,6 +111,7 @@ export default function DashboardPage() {
       if (!user) return;
 
       const token = await user.getIdToken();
+      console.log('🔍 Fetching messages for activationId:', activationId);
       const response = await fetch(`/api/messages?activationId=${activationId}`, {
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -119,7 +120,10 @@ export default function DashboardPage() {
 
       if (response.ok) {
         const data = await response.json();
+        console.log('📨 Messages received:', data);
         setMessages(data);
+      } else {
+        console.error('❌ Failed to fetch messages:', response.status, await response.text());
       }
     } catch (error) {
       console.error('Error fetching messages:', error);
@@ -582,24 +586,22 @@ export default function DashboardPage() {
                   ) : (
                     <div className="space-y-4 max-w-3xl">
                       {messages.map((msg) => (
-                        <div key={msg.id} className="bg-white rounded-lg shadow-sm p-5 border border-gray-200">
-                          <div className="flex items-start justify-between mb-4">
-                            <div className="flex items-baseline gap-2">
-                              <span className="text-xs font-medium text-gray-500 uppercase">Verification Code</span>
-                            </div>
+                        <div key={msg.id} className="bg-white rounded-lg shadow-sm p-6 border border-gray-200">
+                          <div className="flex items-start justify-between mb-3">
+                            <span className="text-xs font-medium text-gray-500 uppercase">Verification Code</span>
                             <span className="text-xs text-gray-500">
                               {format(new Date(msg.receivedAt), 'MMM d, h:mm a')}
                             </span>
                           </div>
-                          <div className="bg-gradient-to-r from-[#1dd1a1]/10 to-blue-50 rounded-lg p-4 mb-4">
-                            <span className="text-3xl font-mono font-bold text-black tracking-wider">
+                          <div className="bg-gradient-to-r from-[#1dd1a1]/10 to-blue-50 rounded-lg p-6 mb-5 text-center">
+                            <span className="text-5xl font-mono font-extrabold text-black tracking-widest">
                               {msg.code}
                             </span>
                           </div>
                           {msg.text && (
-                            <div className="border-t border-gray-100 pt-4">
-                              <p className="text-xs font-medium text-gray-500 uppercase mb-2">Full Message</p>
-                              <p className="text-sm text-gray-700 leading-relaxed">{msg.text}</p>
+                            <div className="border-t border-gray-200 pt-4">
+                              <p className="text-sm font-semibold text-gray-700 mb-2">Full Message:</p>
+                              <p className="text-sm text-gray-800 leading-relaxed bg-gray-50 p-3 rounded">{msg.text}</p>
                             </div>
                           )}
                         </div>

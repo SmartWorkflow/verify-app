@@ -17,6 +17,8 @@ interface Transaction {
     adminNote?: string;
   };
   createdAt: string;
+  userFullName?: string;
+  userEmail?: string;
 }
 
 export default function TransactionsPage() {
@@ -46,7 +48,37 @@ export default function TransactionsPage() {
       
       if (response.ok) {
         const data = await response.json();
-        setTransactions(data);
+        
+        // Fetch user details for each transaction
+        const transactionsWithUserInfo = await Promise.all(
+          data.map(async (transaction: Transaction) => {
+            try {
+              const userResponse = await fetch(`/api/admin/users/${transaction.userId}`, {
+                headers: {
+                  'Authorization': `Bearer ${token}`,
+                },
+              });
+              
+              if (userResponse.ok) {
+                const userData = await userResponse.json();
+                return {
+                  ...transaction,
+                  userFullName: `${userData.firstName || ''} ${userData.lastName || ''}`.trim() || 'N/A',
+                  userEmail: userData.email || 'N/A',
+                };
+              }
+            } catch (error) {
+              console.error('Error fetching user details:', error);
+            }
+            return {
+              ...transaction,
+              userFullName: 'N/A',
+              userEmail: 'N/A',
+            };
+          })
+        );
+        
+        setTransactions(transactionsWithUserInfo);
       }
     } catch (error) {
       console.error('Error fetching transactions:', error);
@@ -96,9 +128,9 @@ export default function TransactionsPage() {
         </div>
         <button
           onClick={fetchTransactions}
-          className="flex items-center gap-2 px-4 py-2 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors cursor-pointer"
+          className="flex items-center gap-2 px-4 py-2 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors cursor-pointer text-black"
         >
-          <RefreshCw className="w-4 h-4" />
+          <RefreshCw className="w-4 h-4 text-black" />
           Refresh
         </button>
       </div>
@@ -150,7 +182,11 @@ export default function TransactionsPage() {
                 </tr>
               ) : (
                 transactions.map((transaction) => (
-                  <tr key={transaction.id} className="hover:bg-gray-50">
+                  <tr 
+                    key={transaction.id} 
+                    onClick={() => setSelectedTransaction(transaction)}
+                    className="hover:bg-gray-50 cursor-pointer"
+                  >
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
                       {format(new Date(transaction.createdAt), 'MMM d, yyyy HH:mm')}
                     </td>
@@ -237,7 +273,7 @@ export default function TransactionsPage() {
         </div>
       </div>
 
-      {/* Transaction Details Modal for Mobile */}
+      {/* Transaction Details Modal */}
       {selectedTransaction && (
         <div
           onClick={() => setSelectedTransaction(null)}
@@ -259,6 +295,20 @@ export default function TransactionsPage() {
             
             <div className="space-y-4">
               <div>
+                <label className="text-sm font-medium text-gray-500">Account Holder</label>
+                <p className="text-base text-gray-900 mt-1 font-medium">
+                  {selectedTransaction.userFullName || 'N/A'}
+                </p>
+              </div>
+
+              <div>
+                <label className="text-sm font-medium text-gray-500">Email Address</label>
+                <p className="text-base text-gray-900 mt-1">
+                  {selectedTransaction.userEmail || 'N/A'}
+                </p>
+              </div>
+
+              <div className="border-t border-gray-200 pt-4">
                 <label className="text-sm font-medium text-gray-500">Date</label>
                 <p className="text-base text-gray-900 mt-1">
                   {format(new Date(selectedTransaction.createdAt), 'MMM d, yyyy HH:mm')}

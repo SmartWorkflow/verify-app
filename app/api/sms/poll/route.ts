@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { adminAuth, adminDb } from '@/lib/firebase-admin';
+import admin from 'firebase-admin';
 
 export async function GET(request: NextRequest) {
   try {
@@ -67,8 +68,8 @@ export async function GET(request: NextRequest) {
         userId,
         code,
         text: fullText || '',
-        receivedAt: new Date().toISOString(),
-        createdAt: new Date().toISOString(),
+        receivedAt: admin.firestore.FieldValue.serverTimestamp(),
+        createdAt: admin.firestore.FieldValue.serverTimestamp(),
       });
 
       // Update activation status
