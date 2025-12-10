@@ -239,7 +239,7 @@ export default function FAQPage() {
             Still have questions?
           </h2>
           <p className="text-gray-600 mb-6">
-            Can't find the answer you're looking for? Please get in touch with our support team.
+            Can&apos;t find the answer you&apos;re looking for? Please get in touch with our support team.
           </p>
           <Link
             href="/signup"

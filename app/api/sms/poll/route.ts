@@ -120,11 +120,12 @@ export async function GET(request: NextRequest) {
       data,
     });
 
-  } catch (error: any) {
+  } catch (error) {
     console.error('Error polling SMS:', error);
+    const message = error instanceof Error ? error.message : 'Unknown error';
     return NextResponse.json({ 
       error: 'Failed to poll SMS',
-      message: error.message 
+      message 
     }, { status: 500 });
   }
 }

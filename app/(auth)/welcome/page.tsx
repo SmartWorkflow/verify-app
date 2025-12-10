@@ -30,12 +30,12 @@ export default function WelcomePage() {
             Welcome to Verifiey! 🎉
           </h1>
           <p className="text-lg text-gray-600 mb-8">
-            Your account has been created successfully. We're excited to have you on board!
+            Your account has been created successfully. We&apos;re excited to have you on board!
           </p>
 
           {/* Features List */}
           <div className="mb-8 text-left max-w-md mx-auto">
-            <h2 className="text-lg font-semibold text-gray-900 mb-4">What's next?</h2>
+            <h2 className="text-lg font-semibold text-gray-900 mb-4">What&apos;s next?</h2>
             <ul className="space-y-3">
               <li className="flex items-start">
                 <svg

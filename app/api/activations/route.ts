@@ -23,20 +23,21 @@ export async function GET(request: NextRequest) {
       .limit(50)
       .get();
 
-    const activations = activationsSnapshot.docs.map(doc => ({
-      id: doc.id,
-      ...doc.data()
-    }));
-
-    console.log('📞 [Activations API] Found', activations.length, 'activations for user:', userId);
-    activations.forEach(a => console.log('   - activationId:', a.activationId, 'phone:', a.phoneNumber));
+    const activations = activationsSnapshot.docs.map(doc => {
+      const data = doc.data();
+      return {
+        id: doc.id,
+        ...data
+      };
+    });
 
     return NextResponse.json(activations);
-  } catch (error: any) {
+  } catch (error) {
     console.error('Error fetching activations:', error);
+    const message = error instanceof Error ? error.message : 'Unknown error';
     return NextResponse.json({ 
       error: 'Failed to fetch activations',
-      message: error.message 
+      message 
     }, { status: 500 });
   }
 }

@@ -41,7 +41,7 @@ export interface Transaction {
   metadata?: {
     adminId?: string;
     adminNote?: string;
-    [key: string]: any;
+    [key: string]: string | number | boolean | undefined;
   };
   createdAt: string;
 }

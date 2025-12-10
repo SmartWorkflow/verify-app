@@ -21,12 +21,14 @@ export function SocketProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     if (!user) {
-      if (socket) {
-        socket.disconnect();
-        setSocket(null);
-        setIsConnected(false);
-      }
-      return;
+      // Cleanup socket when user logs out
+      return () => {
+        if (socket) {
+          socket.disconnect();
+          setSocket(null);
+          setIsConnected(false);
+        }
+      };
     }
 
     // Initialize socket connection
@@ -54,7 +56,8 @@ export function SocketProvider({ children }: { children: React.ReactNode }) {
     return () => {
       socketInstance.disconnect();
     };
-  }, [user]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [user?.uid]);
 
   return (
     <SocketContext.Provider value={{ socket, isConnected }}>

@@ -70,17 +70,23 @@ export async function POST(
     // Emit real-time update via WebSocket
     try {
       emitCreditUpdate(id, result.credits);
-      emitTransaction(id, result.transactionData);
+      emitTransaction(id, {
+        id: result.transactionId,
+        amount: result.transactionData.amount,
+        type: result.transactionData.type,
+        description: result.transactionData.description
+      });
     } catch (socketError) {
       console.error('Socket emit error:', socketError);
       // Continue even if socket fails
     }
 
     return NextResponse.json(result);
-  } catch (error: any) {
+  } catch (error) {
     console.error('Error adding credits:', error);
+    const message = error instanceof Error ? error.message : 'Internal server error';
     return NextResponse.json(
-      { error: error.message || 'Internal server error' },
+      { error: message },
       { status: 500 }
     );
   }

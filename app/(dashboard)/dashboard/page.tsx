@@ -57,7 +57,6 @@ export default function DashboardPage() {
   const [userBalance, setUserBalance] = useState(0);
   const [selectedActivation, setSelectedActivation] = useState<Activation | null>(null);
   const [messages, setMessages] = useState<Message[]>([]);
-  const [pollingActivation, setPollingActivation] = useState<string | null>(null);
 
   const { data: activations, mutate: mutateActivations } = useSWR<Activation[]>(
     '/api/activations',
@@ -111,7 +110,6 @@ export default function DashboardPage() {
       if (!user) return;
 
       const token = await user.getIdToken();
-      console.log('🔍 Fetching messages for activationId:', activationId);
       const response = await fetch(`/api/messages?activationId=${activationId}`, {
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -120,10 +118,7 @@ export default function DashboardPage() {
 
       if (response.ok) {
         const data = await response.json();
-        console.log('📨 Messages received:', data);
         setMessages(data);
-      } else {
-        console.error('❌ Failed to fetch messages:', response.status, await response.text());
       }
     } catch (error) {
       console.error('Error fetching messages:', error);
@@ -263,8 +258,9 @@ export default function DashboardPage() {
       setSelectedActivation(newActivation);
       
       handleCloseModal();
-    } catch (error: any) {
-      toast.error(error.message || 'Failed to request number. Please try again.');
+    } catch (error) {
+      const message = error instanceof Error ? error.message : 'Failed to request number. Please try again.';
+      toast.error(message);
     } finally {
       setIsRequesting(false);
     }

@@ -172,11 +172,12 @@ export async function POST(request: NextRequest) {
       details: data
     }, { status: 500 });
 
-  } catch (error: any) {
+  } catch (error) {
     console.error('Error creating rental:', error);
+    const message = error instanceof Error ? error.message : 'Unknown error';
     return NextResponse.json({ 
       error: 'Failed to create rental',
-      message: error.message 
+      message 
     }, { status: 500 });
   }
 }

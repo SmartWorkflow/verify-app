@@ -7,7 +7,7 @@ import { FirebaseError } from 'firebase/app';
 import toast from 'react-hot-toast';
 
 interface AuthFormProps {
-  mode: 'login' | 'signup';
+  mode?: 'login' | 'signup';
 }
 
 export default function AuthForm({ mode }: AuthFormProps) {

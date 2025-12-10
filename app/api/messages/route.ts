@@ -20,7 +20,6 @@ export async function GET(request: NextRequest) {
     }
 
     // Verify the activation belongs to the user
-    console.log('🔍 [Messages API] Looking up activation for userId:', userId, 'activationId:', activationId);
     const activationSnapshot = await adminDb
       .collection('activations')
       .where('userId', '==', userId)
@@ -29,11 +28,8 @@ export async function GET(request: NextRequest) {
       .get();
 
     if (activationSnapshot.empty) {
-      console.error('❌ [Messages API] Activation not found for userId:', userId, 'activationId:', activationId);
       return NextResponse.json({ error: 'Activation not found' }, { status: 404 });
     }
-
-    console.log('✅ [Messages API] Activation found');
 
     // Fetch messages for this activation
     console.log('🔍 [Messages API] Querying messages for activationId:', activationId);
@@ -46,8 +42,7 @@ export async function GET(request: NextRequest) {
         .where('activationId', '==', activationId)
         .orderBy('receivedAt', 'desc')
         .get();
-    } catch (orderByError: any) {
-      console.warn('⚠️ [Messages API] OrderBy failed, trying without:', orderByError.message);
+    } catch {
       // Fallback without orderBy if index doesn't exist
       messagesSnapshot = await adminDb
         .collection('messages')
@@ -55,15 +50,16 @@ export async function GET(request: NextRequest) {
         .get();
     }
 
-    console.log('📊 [Messages API] Found', messagesSnapshot.docs.length, 'messages');
-
-    const messages = messagesSnapshot.docs.map((doc: any) => {
+    const messages = messagesSnapshot.docs.map((doc) => {
       const data = doc.data();
-      console.log('📝 [Messages API] Message data:', { id: doc.id, code: data.code, text: data.text?.substring(0, 50) });
       return {
         id: doc.id,
-        ...data,
-        receivedAt: data.receivedAt?.toDate ? data.receivedAt.toDate().toISOString() : data.receivedAt
+        activationId: data.activationId,
+        code: data.code,
+        text: data.text,
+        userId: data.userId,
+        receivedAt: data.receivedAt?.toDate ? data.receivedAt.toDate().toISOString() : data.receivedAt,
+        createdAt: data.createdAt,
       };
     });
 
@@ -79,13 +75,12 @@ export async function GET(request: NextRequest) {
       index === self.findIndex((m) => m.code === msg.code)
     );
 
-    console.log('✨ [Messages API] Returning', uniqueMessages.length, 'unique messages');
-
     return NextResponse.json(uniqueMessages);
-  } catch (error: any) {
+  } catch (error) {
     console.error('Error fetching messages:', error);
+    const message = error instanceof Error ? error.message : 'Internal server error';
     return NextResponse.json(
-      { error: error.message || 'Internal server error' },
+      { error: message },
       { status: 500 }
     );
   }

@@ -15,7 +15,7 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   const { user, loading, signOut } = useAuth();
-  const { socket, isConnected } = useSocket();
+  const { socket } = useSocket();
   const router = useRouter();
   const [credits, setCredits] = useState<number>(0);
   const [loadingCredits, setLoadingCredits] = useState(true);
@@ -50,7 +50,7 @@ export default function DashboardLayout({
         toast.success('Credit balance updated!', { icon: '💰' });
       });
 
-      socket.on('transaction', (transaction: any) => {
+      socket.on('transaction', (transaction: { id: string; amount: number; type: string }) => {
         console.log('Transaction received:', transaction);
         // Refresh credits when transaction occurs
         fetchCredits();

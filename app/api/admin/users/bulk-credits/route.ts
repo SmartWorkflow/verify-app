@@ -70,24 +70,31 @@ export async function POST(request: NextRequest) {
             userId,
             newCredits,
             transactionData,
+            transactionId: transactionRef.id,
           };
         });
 
         // Emit real-time update via WebSocket
         try {
           emitCreditUpdate(userId, result.newCredits);
-          emitTransaction(userId, result.transactionData);
+          emitTransaction(userId, {
+            id: result.transactionId,
+            amount: result.transactionData.amount,
+            type: result.transactionData.type,
+            description: result.transactionData.description
+          });
         } catch (socketError) {
           console.error('Socket emit error:', socketError);
           // Continue even if socket fails
         }
 
         results.successful.push(userId);
-      } catch (error: any) {
+      } catch (error) {
         console.error(`Error updating user ${userId}:`, error);
+        const errorMessage = error instanceof Error ? error.message : 'Unknown error';
         results.failed.push({
           userId,
-          error: error.message || 'Unknown error',
+          error: errorMessage,
         });
       }
     }
@@ -96,10 +103,11 @@ export async function POST(request: NextRequest) {
       message: `Successfully updated ${results.successful.length} of ${userIds.length} users`,
       results,
     });
-  } catch (error: any) {
+  } catch (error) {
     console.error('Error processing bulk credits:', error);
+    const message = error instanceof Error ? error.message : 'Internal server error';
     return NextResponse.json(
-      { error: error.message || 'Internal server error' },
+      { error: message },
       { status: 500 }
     );
   }

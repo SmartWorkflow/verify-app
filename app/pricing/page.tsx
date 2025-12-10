@@ -36,16 +36,19 @@ export default function PricingPage() {
 
   // Filter services based on search
   useEffect(() => {
-    if (!searchQuery.trim()) {
-      setFilteredServices(services);
-    } else {
-      const query = searchQuery.toLowerCase();
-      const filtered = services.filter(service =>
-        service.service.toLowerCase().includes(query) ||
-        service.code.toLowerCase().includes(query)
-      );
-      setFilteredServices(filtered);
-    }
+    const timeoutId = setTimeout(() => {
+      if (!searchQuery.trim()) {
+        setFilteredServices(services);
+      } else {
+        const query = searchQuery.toLowerCase();
+        const filtered = services.filter(service =>
+          service.service.toLowerCase().includes(query) ||
+          service.code.toLowerCase().includes(query)
+        );
+        setFilteredServices(filtered);
+      }
+    }, 0);
+    return () => clearTimeout(timeoutId);
   }, [searchQuery, services]);
 
   return (

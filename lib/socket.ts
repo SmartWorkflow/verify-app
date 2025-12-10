@@ -1,9 +1,9 @@
 import { Server } from 'socket.io';
-import { createServer } from 'http';
+import { Server as HTTPServer } from 'http';
 
 let io: Server | null = null;
 
-export function initSocket(server: any) {
+export function initSocket(server: HTTPServer) {
   if (io) return io;
 
   io = new Server(server, {
@@ -44,7 +44,7 @@ export function emitCreditUpdate(userId: string, credits: number) {
 }
 
 // Helper to emit transaction to specific user
-export function emitTransaction(userId: string, transaction: any) {
+export function emitTransaction(userId: string, transaction: { id: string; amount: number; type: string; description?: string }) {
   if (io) {
     io.to(`user-${userId}`).emit('transaction', transaction);
   }

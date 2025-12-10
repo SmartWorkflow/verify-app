@@ -72,11 +72,12 @@ export async function GET(request: NextRequest) {
       status: 'error'
     }, { status: 500 });
 
-  } catch (error: any) {
+  } catch (error) {
     console.error('Error fetching DaisySMS balance:', error);
+    const message = error instanceof Error ? error.message : 'Unknown error';
     return NextResponse.json({ 
       error: 'Failed to fetch balance',
-      message: error.message 
+      message 
     }, { status: 500 });
   }
 }
